@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{193C8711-EEA3-4C4D-80EB-40200A55AA7B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp1</RootNamespace>
+    <AssemblyName>WindowsFormsApp1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="hw05-pos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hw05-pos.Designer.cs">
+      <DependentUpon>hw05-pos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hw03-貸款-1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hw03-貸款-1.Designer.cs">
+      <DependentUpon>hw03-貸款-1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hw03-貸款.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hw03-貸款.Designer.cs">
+      <DependentUpon>hw03-貸款.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hw01-主介面.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hw01-主介面.Designer.cs">
+      <DependentUpon>hw01-主介面.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hw02-Hello.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hw02-Hello.Designer.cs">
+      <DependentUpon>hw02-Hello.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hw04-計算機.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hw04-計算機.Designer.cs">
+      <DependentUpon>hw04-計算機.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hw06-學生成績.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hw06-學生成績.Designer.cs">
+      <DependentUpon>hw06-學生成績.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hw07-螢幕保護程式.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hw07-螢幕保護程式.Designer.cs">
+      <DependentUpon>hw07-螢幕保護程式.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hw08-OX遊戲.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hw08-OX遊戲.Designer.cs">
+      <DependentUpon>hw08-OX遊戲.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hw09-記事本.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hw09-記事本.Designer.cs">
+      <DependentUpon>hw09-記事本.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hw10-小畫家.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hw10-小畫家.Designer.cs">
+      <DependentUpon>hw10-小畫家.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="hw03-貸款.resx">
+      <DependentUpon>hw03-貸款.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hw01-主介面.resx">
+      <DependentUpon>hw01-主介面.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hw02-Hello.resx">
+      <DependentUpon>hw02-Hello.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hw03-貸款-1.resx">
+      <DependentUpon>hw03-貸款-1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hw04-計算機.resx">
+      <DependentUpon>hw04-計算機.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hw05-pos.resx">
+      <DependentUpon>hw05-pos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hw06-學生成績.resx">
+      <DependentUpon>hw06-學生成績.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hw07-螢幕保護程式.resx">
+      <DependentUpon>hw07-螢幕保護程式.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hw08-OX遊戲.resx">
+      <DependentUpon>hw08-OX遊戲.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hw09-記事本.resx">
+      <DependentUpon>hw09-記事本.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hw10-小畫家.resx">
+      <DependentUpon>hw10-小畫家.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
